@@ -1,0 +1,2 @@
+//parado en la carpeta /app
+jar cmf MANIFEST.txt Ingenia.jar *.class img

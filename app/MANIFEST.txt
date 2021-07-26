@@ -1,0 +1,5 @@
+Manifest-Version: 1.1
+Created-By: Nahuel Bonino
+Main-Class: Main
+Implementation-Title: Ingenia
+Implementation-Version: 0.9
