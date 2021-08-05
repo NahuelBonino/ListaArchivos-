@@ -92,7 +92,7 @@ public class Inicio extends JPanel{
         f.setIconImage(icon.getImage());
 
         //texto
-        JLabel lb_cn = new JLabel("Carpeta de Llamadas: ");
+        JLabel lb_cn = new JLabel("Carpeta del archivo: ");
         lb_cn.setBounds(40, 80, 200, 40);
         lb_cn.setFont( new Font("Arial",Font.PLAIN,18));
 
@@ -105,7 +105,7 @@ public class Inicio extends JPanel{
 
         //BUSCAR POR DOCUMENTO
 
-        JLabel def = new JLabel("Documento: ");
+        JLabel def = new JLabel("El archivo contiene: ");
         def.setFont( new Font("Arial",Font.PLAIN,18));
         def.setBounds(40,130,200,40);
         p.add(def);
@@ -116,7 +116,7 @@ public class Inicio extends JPanel{
         p.add(jtf);
 
         //BOTON LISTAR
-        JButton b = new JButton("Listar audios");
+        JButton b = new JButton("Listar archivos");
         b.setBounds(200, 200, 400, 100);
         b.setFont( new Font("Arial",Font.BOLD,30));
 
@@ -124,22 +124,11 @@ public class Inicio extends JPanel{
         b.addActionListener(new ActionListener(){  
             public void actionPerformed(ActionEvent e){  
           
-                documento = jtf.getText();
-                if (documento.length()==0 || isNumeric(documento)){ 
-                    if (documento.length() >= 5){                                
+                        documento = jtf.getText();                                     
                         f.remove(p);  
-                        CargandoAudios ca = new CargandoAudios(f,c,documento);
-                        
+                        CargandoAudios ca = new CargandoAudios(f,c,documento);                     
                         //listaLlamadas ls = new listaLlamadas(f,c,documento);  //cuando se apreta el boton se listan los archivos
-                    }
-                    else{
-                        JOptionPane.showMessageDialog(null,"La cedula debe tener 5 o mas digitos" );
-                    }    
-                }
-                else{
-                    JOptionPane.showMessageDialog(null, "La cedula no debe contener letras o simbolos");
-                }
-            }  
+            }
         }); 
      
         //LO AGREGO AL PANEL

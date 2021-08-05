@@ -8,7 +8,7 @@ public class Principal extends JFrame{
     Principal(){		
         
         //FRAME
-        this.setTitle("Llamadas de Ingenia");
+        this.setTitle("Busqueda de archivos");
         this.setSize(800, 400);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(3);

@@ -54,7 +54,7 @@ public class listaLlamadas extends JPanel{
             list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
             this.add(list);
              
-            JButton rep = new JButton("Reproducir");  //BOTON REPRODUCIR
+            JButton rep = new JButton("Abrir");  //BOTON REPRODUCIR
             rep.addActionListener(new ActionListener(){  
                 public void actionPerformed(ActionEvent e){  
               
